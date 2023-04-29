@@ -1,0 +1,650 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    width: 100%;
+}
+
+.lcrNAV {
+    display: flex;
+    justify-content: center;
+    margin: 0 35px 0 0;
+}
+
+.lcrNAV ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: medium;
+
+}
+
+.line1::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 95px;
+    height: 1px;
+    bottom: 0;
+    left: 15px;
+    /* left 55px */
+}
+
+.line1:hover::before {
+    opacity: 1;
+    left: 55px;
+    transition: 0.5s;
+}
+
+.line2::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 55px;
+    height: 1px;
+    bottom: 0;
+    left: 145px;
+    /* left 185px */
+}
+
+.line2:hover::before {
+    opacity: 1;
+    left: 185px;
+    transition: 0.5s;
+}
+
+.line3::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 1px;
+    bottom: 0;
+    left: 235px;
+    /* left 275px */
+}
+
+.line3:hover::before {
+    opacity: 1;
+    left: 275px;
+    transition: 0.5s;
+}
+
+.line4::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 1px;
+    bottom: 0;
+    left: 300px;
+    /* left 340px */
+}
+
+.line4:hover::before {
+    left: 340px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.line5::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 65px;
+    height: 1px;
+    bottom: 0;
+    left: 385px;
+    /* left 425px */
+}
+
+.line5:hover::before {
+    opacity: 1;
+    left: 425px;
+    transition: 0.5s;
+}
+
+.hoverColor:hover {
+    color: cadetblue;
+    transition: 0.5s;
+}
+
+.blackCircle {
+    background-color: black;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 7px;
+    text-align: center;
+}
+
+.firstImg {
+    height: 90vh;
+    background-color: antiquewhite;
+    margin: auto;
+    width: 94%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainPicture {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+
+}
+
+.mainPicture img {
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.caption h1 {
+    font-size: 60px;
+    margin: 0 0 0 0;
+}
+
+.caption button {
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: large;
+}
+
+.caption button:hover {
+    color: cadetblue;
+    transition: 0.5s;
+}
+
+.buble1 {
+    position: absolute;
+    background-color: white;
+    width: 35%;
+    height: 70%;
+    border-radius: 50%;
+    right: 10%;
+    top: 10%;
+}
+
+.buble2 {
+    position: absolute;
+    background-color: white;
+    width: 15%;
+    height: 30%;
+    border-radius: 50%;
+    right: 35%;
+    top: 60%;
+}
+
+.summerCollection {
+    text-align: center;
+    height: 80vh;
+    width: 94%;
+    margin: auto;
+
+}
+
+.marginSummerCollection {
+    margin-top: 100px;
+
+}
+
+.cards {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 24%;
+    height: 65vh;
+
+}
+
+.cardCaption p {
+    color: gray;
+
+}
+
+.card1 {
+    background-image: url(imgs/product-09-a-300x366.jpg);
+}
+
+.card2 {
+
+    background-image: url(imgs/product-06-a-300x366.jpg);
+
+}
+
+.card3 {
+
+    background-image: url(imgs/product-10-a-300x366.jpg);
+
+}
+
+.card4 {
+    background-image: url(imgs/product-08-a-300x366.jpg);
+
+}
+
+.inCardsEdit {
+    width: 100%;
+    height: 48vh;
+    overflow: hidden;
+    background-size: cover;
+    transition: 0.5s
+}
+
+.inCardsEdit p {
+    background-color: white;
+    width: 60px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px gray;
+    position: relative;
+}
+
+.fa-basket-shopping {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+
+}
+
+.fa-eye {
+    position: absolute;
+    right: 7%;
+    top: 15%;
+}
+
+.incardcarts {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px 5px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.inCardsEdit:hover .incardcarts {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.card1:hover {
+    background-image: url(imgs/product-01-c-300x366.jpg);
+    overflow: hidden;
+}
+
+.card11:hover .card1 {
+    background-image: url(imgs/product-01-c-300x366.jpg);
+    overflow: hidden;
+}
+
+.card2:hover {
+    background-image: url(imgs/product-01-d-300x366.jpg);
+    overflow: hidden;
+}
+
+.card22:hover .card2 {
+    background-image: url(imgs/product-01-d-300x366.jpg);
+    overflow: hidden;
+}
+
+.card3:hover {
+    background-image: url(imgs/product-01-d-300x366.jpg);
+    overflow: hidden;
+}
+
+.card33:hover .card3 {
+    background-image: url(imgs/product-01-d-300x366.jpg);
+    overflow: hidden;
+}
+
+.card4:hover {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.card44:hover .card4 {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.inCardsEdit {
+    position: relative;
+}
+
+.secondSection {
+    height: 100vh;
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.rightPic img {
+    width: 110%;
+    height: 90vh;
+}
+
+.leftPic img {
+    width: 140%;
+    height: 50vh;
+    margin-left: -8vh;
+}
+
+.rightPic {
+    margin-top: 10vh;
+}
+
+.leftPic {
+    margin-top: 10vh;
+}
+
+.coption {
+    text-align: center;
+}
+
+.leftpicbtn {
+    padding: 15px 40px;
+    color: white;
+    background-color: black;
+}
+
+.thirdSection {
+    background-image: url(imgs/photo-1508427953056-b00b8d78ebf5.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(90%);
+    width: 90%;
+    height: 98vh;
+    position: relative;
+    margin: auto;
+    margin-top: 15vh;
+
+}
+
+.ThirdCaption {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+}
+
+.ThirdMargin {
+    margin: 0;
+    color: #ffffff;
+    filter: brightness(100%);
+}
+
+.marginbtn {
+    margin-bottom: 50px;
+}
+
+.FourthSection {
+    width: 90%;
+    height: 120vh;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.leftFourthSection {
+    background-color: blanchedalmond;
+    width: 60%;
+    height: 90vh;
+    margin-top: 30vh;
+    position: relative;
+}
+
+.leftFourthSection img {
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.rightFourthSection {
+    margin-top: 30vh;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+p {
+    color: grey;
+}
+
+.fifthSection {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.card1111 {
+    background-image: url(imgs/product-01-a-300x366.jpg);
+}
+
+.card2222 {
+
+    background-image: url(imgs/product-05-a-300x366.jpg);
+
+}
+
+.card3333 {
+
+    background-image: url(imgs/product-03-a-300x366.jpg);
+
+}
+
+.card4444 {
+    background-image: url(imgs/product-08-a-300x366.jpg);
+
+}
+
+.card1111:hover {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.card111:hover .card1 {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.card2222:hover {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.card222:hover .card2 {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.card3333:hover {
+    background-image: url(imgs/product-01-d-300x366.jpg);
+    overflow: hidden;
+}
+
+.card333:hover .card3 {
+    background-image: url(imgs/product-01-d-300x366.jpg);
+    overflow: hidden;
+}
+
+.card4444:hover {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.card444:hover .card4 {
+    background-image: url(imgs/product-001-b-300x366.jpg);
+    overflow: hidden;
+}
+
+.fa-star {
+    color: orange;
+}
+
+.sixthSection {
+    width: 50%;
+    margin-top: 15vh;
+    margin: auto;
+    text-align: center;
+}
+
+.sixthSection p {
+    text-decoration: underline;
+}
+
+.seventhSection {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.leftimg {
+    width: 49%;
+    position: relative;
+}
+
+.leftimg img {
+    width: 100%;
+}
+
+.marginbtnss {
+    padding: 4% 45%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-align: center;
+    position: relative;
+    bottom: 10vh;
+    transition: 0.5s;
+}
+
+.marginbtnss:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.lastSection {
+    background-color: blanchedalmond;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    width: 95%;
+    height: 80vh;
+    position: relative;
+}
+
+.lastcaption {
+    height: 30%;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.inputfield {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 8%;
+}
+
+.inputfield input[type=text] {
+    border: 0.5px solid rgb(186, 185, 185);
+    width: 40%;
+}
+
+.inputfield input[type=button] {
+    padding: 1vh 5vh 1vh 5vh;
+    margin-left: 1vh;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.anchors {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 5vh;
+    justify-content: center;
+}
+
+.anchors a {
+    margin: 0 5vh;
+    color: gray;
+    transition: 0.5s;
+}
+
+.anchors a:hover {
+    color: black;
+}
+
+.emails a {
+    background-color: white;
+    padding: 15px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.emails a:hover {
+    background-color: blanchedalmond;
+}
+
+.copyrights {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.copyrights h4 {
+    color: white;
+}
+
+.copyrights i {
+    color: white;
+}
